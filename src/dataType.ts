@@ -104,6 +104,10 @@ console.log(id);
 console.log(title);
 console.log(published);
 
+let anotherWayOfWritting : Array<number | string | boolean> = [3, "Title Three", true];
+console.log(anotherWayOfWritting[0]);
+console.log(anotherWayOfWritting[1]);
+console.log(anotherWayOfWritting[2]);
 console.log("=====");
 
 /*

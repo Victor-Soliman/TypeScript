@@ -114,3 +114,22 @@ const addWithArrow = (num1: number, num2: number): number => num1 + num2;
 console.log(addWithArrow(20, 10));
 
 console.log("---------");
+/*
+  PS: sometimes you have the sitiuation when you pass 2 tpes as parameter, but when you use them
+  -> it gives you error
+  here is an example & how to fix it
+*/
+
+function formatAmount(money: number | string){
+  // let amount = parseInt(money);    // here you see the error
+  let amount: number;
+  if(typeof money == 'string'){
+    amount = parseInt(money);
+  }else {
+    amount = money;
+  }
+
+  console.log(formatAmount(4));
+  console.log(formatAmount("4"));
+
+}
